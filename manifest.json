@@ -1,0 +1,15 @@
+{
+  "manifest_version":2,
+
+  "name": "word translation and image search",
+  "version": "0.1.0",
+  "description": "highlight a word to see an image search result and translation",
+
+  "web_accessible_resources": ["pixabay-logo.png"],
+
+  "content_scripts":[{
+    "css": ["styles.css"],
+    "js": ["jquery-3.2.1.min.js","content.js"],
+    "matches": ["http://www.russian.rt.com/*"]
+    }]
+    }
